@@ -30,4 +30,8 @@ Lita.configure do |config|
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
   # config.handlers.some_handler.some_config_key = "value"
+  config.handlers.memegen.command_only = false
+
+  config.handlers.memegen.username = ENV['MEMGEN_USERNAME']
+  config.handlers.memegen.password = ENV['MEMGEN_PASSWORD']
 end
